@@ -1,0 +1,112 @@
+/*footer*/
+
+.contact-section {
+    background-color: $section-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .logo {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+}
+
+.footer-connect {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo--white {
+    color: $page-color;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.link-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+    &:last-child {
+            margin-bottom: 0;
+            display: inline-block;
+}}
+
+.link-footer__address {
+    color: $page-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+            color: $accent-color;
+        }
+}
+
+.link-footer__connect {
+    color: $connect-color;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+    color: $accent-color;
+}
+}
+
+.footer-subscribe {
+    margin-left: auto;
+}
+
+.footer-subscribe__title {
+    color: $page-color;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.footer-subscribe__item {
+    display: flex;
+}
+
+.footer-subscribe__input {
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $section-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: $page-color;
+    outline: none;
+}
+
+.footer-subscribe__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-subscribe__button {
+    color: $page-color;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: left;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    min-width: 200px;
+    height: 50px
+}
+
+.footer-subscribe__icon {
+    margin-left: 10px;
+}

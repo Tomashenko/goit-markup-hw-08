@@ -1,0 +1,10 @@
+@mixin centeredFlex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.footer-subscribe__button, .form__checkbox, .portfolio-filter,
+.features__icon, .social-list, .social-list__links, .clients__link,
+.footer-social__links{
+     @include centeredFlex()
+ }

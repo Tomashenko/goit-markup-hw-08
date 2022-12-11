@@ -1,0 +1,36 @@
+/*Фільтер*/
+
+.portfolio-filter__item {
+    margin-right: 8px;
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.filter {
+    color: $title-text-color;
+    background-color: $team-section-color;
+    display: inline-block;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 22px;
+    height: 38px;
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,&:focus {
+    color: $page-color;
+    background-color: $accent-color;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+}
+
