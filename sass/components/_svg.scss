@@ -91,21 +91,32 @@
 
 .clients {
     display: flex;
+    flex-wrap: wrap;
 }
 
-.clients__item {
-    width: 170px;
+.clients__item {   
     height: 92px;
     margin-right: 30px;
     border: 1px solid $links-stroke-color;
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-    border-color: $accent-color;
+    border-color: $accent-color;}
+    
+    @media screen and (min-width: 480px) {width: 210px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+    margin-right: 0;}
+    &:nth-last-child(-n+2) {
+    margin-bottom: 0;}
     }
+
+    @media screen and (min-width: 768px) {width: 226px;
+    margin-bottom: 30px;}
+
+    @media screen and (min-width:1200px) { width: 170px;
     &:last-child {
-        margin-right: 0;
-    }
+        margin-right: 0;}}
 }
 
 .clients__link {
@@ -124,7 +135,11 @@
 /*Футер svg*/
 
 .footer-social {
-    margin-left: 70px;
+@media screen and (min-width: 480px) {
+    margin-top: 60px;
+}
+
+@media screen and (min-width:1200px) {margin-left: 70px;}
 }
 
 .footer-social__title {
@@ -139,7 +154,14 @@
 
 .footer-social__list {
     display: flex;
-    justify-content: space-between;
+
+    @media screen and (min-width: 480px) {
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    @media screen and (min-width:1200px) {
+        justify-content: space-between;}
+    
 }
 
 .footer-social__item {
