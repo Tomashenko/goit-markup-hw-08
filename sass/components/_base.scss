@@ -63,12 +63,14 @@ html {
     padding-top: 94px;}
 }
 
-.section__list {
+.section__list { display: flex;
  @media screen and (max-width:767px) {
         display: block;
     }
-    display: flex;
-}
+
+ @media screen and (min-width:768px) and (max-width:1199px) {
+ flex-wrap: wrap;}
+   }
 
 .section__title {
     color: $title-text-color;

@@ -141,12 +141,22 @@
 
 .contact { display:flex;
     @media screen and (max-width:767px) {
-   flex-direction: column-reverse;}}
+   flex-direction: column-reverse;}
+ @media screen and (min-width:768px) and (max-width:1199px) {
+    display: block;
+    padding-top: 21px;
+}
+}
 
- @media screen and (min-width:768px){
+ @media screen and (min-width:1200px){
 .contact__item+.contact__item {
     margin-left: 50px;
 }}
+
+.contact__item{@media screen and (min-width:768px) and (max-width:1199px) {
+    padding-bottom: 10px;
+    &:last-child{padding-bottom:0}
+  }}
 
 .contact__link {
     color: $primery-text-color;
@@ -156,13 +166,13 @@
     &:hover, &:focus {
     color: $accent-color;
   }
- 
-  @media screen and (min-width:768px) {
+
+  @media screen and (min-width:1199px) {
     padding-top: 32px;
     padding-bottom: 32px;}
    }
 
-@media screen and (max-width:767px) {
+ @media screen and (max-width:767px) {
     .contact__item:last-child {
     padding-bottom: 32px;}
     
@@ -178,6 +188,9 @@
 
 .mobile-social{display: flex;
     align-items: center;
+ @media screen and (min-width:768px) {
+        display: none;
+    }
  }
 .mobile-social__item{
     font-weight:500;

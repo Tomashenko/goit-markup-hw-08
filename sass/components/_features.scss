@@ -6,6 +6,9 @@
     &:last-child {
             margin-right: 0;
         }}
+@media screen and (min-width:768px) and (max-width:1199px){
+    width: 354px;
+ &:nth-child(2n) {margin-right: 0;}}
 }
 
 .features__title {
@@ -36,3 +39,10 @@
 }
 
 .section__features:last-child .features__about{margin-bottom: 0}
+
+
+    
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .section__features:nth-last-child(-n+2) .features__about { 
+        margin-bottom: 0;
+    }}

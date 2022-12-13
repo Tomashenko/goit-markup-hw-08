@@ -4,15 +4,24 @@
     background-color: $section-color;
     padding-top: 60px;
     padding-bottom: 60px;
-    text-align: center;
+    
     .logo {
             display: inline-block;
             margin-bottom: 20px;
             
         }
+@media screen and (min-width: 480px)and (max-width:1199px) {
+    text-align: center;}
 }
 
 .footer-connect {
+
+    @media screen and (min-width: 768px)and (max-width:1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items:baseline;
+    }
 
     @media screen and (min-width:1200px) {
     display: flex;
@@ -35,7 +44,6 @@
 }
 
 .link-footer {
-    text-align: center;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -72,6 +80,12 @@
 .footer-subscribe {
     margin-left: auto;
 }}
+
+@media screen and (min-width: 768px)and (max-width:1199px) {
+    .footer-subscribe {
+         margin-top: 60px;
+        }
+}
 
 .footer-subscribe__title {
     color: $page-color;

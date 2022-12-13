@@ -22,9 +22,7 @@
 
 /*Hero-SVG*/
 
-.overlay {
-    width: 1600px;
-    height: 600px;
+.overlay {   
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -32,10 +30,20 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    @media screen and (max-width: 767px) {
+
+    @media screen and(min-width: 480px)and (max-width: 767px) {
             width: 480px;
-            padding: 0 15;
-        }
+            height: 400px;}
+
+  @media screen and (min-width: 768px)and (max-width:1199px) {
+        width: 768px;
+        height: 400px;
+}
+
+  @media screen and (min-width:1200px) { 
+    width: 1600px;
+    height: 600px;}
+
 }
 
 /*Особливості-SVG*/
@@ -103,7 +111,7 @@
     &:hover, &:focus {
     border-color: $accent-color;}
     
-    @media screen and (min-width: 480px) {width: 210px;
+    @media screen and (min-width: 480px)and (max-width:767px) {width: 210px;
     margin-bottom: 30px;
     &:nth-child(2n) {
     margin-right: 0;}
@@ -111,12 +119,13 @@
     margin-bottom: 0;}
     }
 
-    @media screen and (min-width: 768px) {width: 226px;
-    margin-bottom: 30px;}
+    @media screen and (min-width: 768px)and (max-width:1199px) {width: 226px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {margin-right: 0;}
+    &:nth-last-child(-n+3) {margin-bottom: 0;}}
 
     @media screen and (min-width:1200px) { width: 170px;
-    &:last-child {
-        margin-right: 0;}}
+    &:last-child {margin-right: 0;}}
 }
 
 .clients__link {
@@ -135,8 +144,11 @@
 /*Футер svg*/
 
 .footer-social {
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px)and (max-width:767px) {
     margin-top: 60px;
+}
+@media screen and (min-width: 768px)and (max-width:1199px) {
+
 }
 
 @media screen and (min-width:1200px) {margin-left: 70px;}
@@ -155,7 +167,7 @@
 .footer-social__list {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 480px) and (max-width:767px){
         justify-content: center;
         margin-bottom: 60px;
     }
