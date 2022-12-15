@@ -78,7 +78,15 @@
                 <li class="projects__item">
                     <a class="projects__link" href="">
                         <div class="projects__overlay-box">
-                         <img   class="img-project" src="./img/project1.jpg" alt="Технокряк" width="370">
+                         <img   class="img-project"
+                         srcset="
+                         ./img/project1-354.jpg 354w,
+                    ./img/project1-354@x2.jpg 708w
+
+                    ./img/project1-450.jpg 450w,
+                    ./img/project1-450@x2.jpg 900w"
+                    sizes="(min-width: 480px) 450px, (min-width: 768px) 354px,100vw" 
+                         src="./img/project1.jpg" alt="Технокряк" >
                          <p class="projects__discription">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
                           вичерпні відомості про компанію чи приватну особу.</p>
                         </div>
