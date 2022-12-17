@@ -215,7 +215,13 @@ html {
     padding: 48px 40px;
   }
   .menu-bg.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 768px) {
@@ -282,11 +288,6 @@ html {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav__site:last-child {
-    margin-bottom: 302px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav__item {
     margin-right: 50px;
@@ -301,6 +302,11 @@ html {
   }
   .nav__item:last-child {
     margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact-social {
+    margin-top: 200px;
   }
 }
 .contact {
@@ -1287,7 +1293,7 @@ html {
 .projects__name {
   color: #212121;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
