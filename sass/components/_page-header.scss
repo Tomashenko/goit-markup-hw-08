@@ -70,6 +70,7 @@
    
  &.is-open {display: flex;
     flex-direction: column;
+    position: fixed;
   }
 }}
     
@@ -124,11 +125,6 @@
     }
 }
 
-@media screen and (max-width:767px){
-.nav__site:last-child{
-   }}
-
-
  @media screen and (min-width:768px) {
 .nav__item {
     margin-right: 50px;
@@ -142,7 +138,7 @@
 
 @media screen and (max-width:767px) {
 .contact-social{
-margin-top: 200px;}}
+margin-top: 250px;}}
 
 .contact { display:flex;
     
